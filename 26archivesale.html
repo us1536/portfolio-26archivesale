@@ -1,7 +1,3 @@
-<!-- Swiper 라이브러리 (GitHub Pages 등 독립 페이지용 — Cafe24에는 이미 있으면 생략 가능) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
 <!-- 비디오 + PNG 오버레이 모듈 (Cafe24 복붙용) -->
 <div class="event-video-section">
 
@@ -152,14 +148,6 @@
         transform: translateZ(0);
     }
 
-    /* Cafe24 에디터가 자동 삽입하는 빈 단락/줄바꿈으로 인한 여백 방지 */
-    .event-video-section + p,
-    .event-video-section + br,
-    .event-container + p,
-    .event-container + br {
-        display: none;
-    }
-
     /* 레이어 */
     .layer{
         position:absolute;
@@ -198,43 +186,4 @@
     <a class="mover" href="//lounge-b.com/exec/front/newcoupon/IssueDownload?coupon_no=쿠폰번호&opener_url=/product/list.html?cate_no=387.html">
         <img src="http://img.bstyle.kr/event/260713_joy_m_02.jpg" alt="다운받기">
     </a>
-</div>
-
-
-<!-- 상품1 -->
-<div class="event-container">
-    <div class="swiper-container swiper pro1" style="margin:0 auto; text-align:center; overflow:hidden !important;">
-        <ul class="swiper-wrapper" style="transition-timing-function: linear;">
-            <li class="swiper-slide"><a href="/product/detail.html?product_no=21304"><img src="http://img.bstyle.kr/event/260713_joy_03_01.jpg"></a></li>
-            <li class="swiper-slide"><a href="/product/detail.html?product_no=21628"><img src="http://img.bstyle.kr/event/260713_joy_03_02.jpg"></a></li>
-            <li class="swiper-slide"><a href="/product/detail.html?product_no=21309"><img src="http://img.bstyle.kr/event/260713_joy_03_03.jpg"></a></li>
-            <li class="swiper-slide"><a href="/product/detail.html?product_no=21569"><img src="http://img.bstyle.kr/event/260713_joy_03_04.jpg"></a></li>
-            <li class="swiper-slide"><a href="/product/detail.html?product_no=20972"><img src="http://img.bstyle.kr/event/260713_joy_03_05.jpg"></a></li>
-            <li class="swiper-slide"><a href="/product/detail.html?product_no=21631"><img src="http://img.bstyle.kr/event/260713_joy_03_06.jpg"></a></li>
-            <li class="swiper-slide"><a href="/product/detail.html?product_no=20973"><img src="http://img.bstyle.kr/event/260713_joy_03_07.jpg"></a></li>
-            <li class="swiper-slide"><a href="/product/detail.html?product_no=21590"><img src="http://img.bstyle.kr/event/260713_joy_03_08.jpg"></a></li>
-            <li class="swiper-slide"><a href="/product/detail.html?product_no=21585"><img src="http://img.bstyle.kr/event/260713_joy_03_09.jpg"></a></li>
-        </ul>
-    </div>
-</div>
-
-<!-- Initialize Swiper (반응형 breakpoints로 PC/M 옵션 통합) -->
-<script>
-    var swiper = new Swiper('.pro1', {
-        // 기본값 = 모바일(768px 이하) 옵션
-        slidesPerView: 1.2,
-        spaceBetween: 0,
-        loop: true,
-        speed: 3000,
-        autoplay: {
-            delay: 0,
-            disableOnInteraction: false,
-        },
-        breakpoints: {
-            769: {
-                slidesPerView: 4.5,
-                speed: 3200,
-            }
-        }
-    });
-</script>
+</div>ㅍ
