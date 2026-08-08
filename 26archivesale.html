@@ -1,4 +1,4 @@
-<!-- Swiper 라이브러리 (GitHub Pages 등 독립 페이지용) -->
+<!-- Swiper 라이브러리 (GitHub Pages 등 독립 페이지용 — Cafe24에는 이미 있으면 생략 가능) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
@@ -152,6 +152,14 @@
         transform: translateZ(0);
     }
 
+    /* Cafe24 에디터가 자동 삽입하는 빈 단락/줄바꿈으로 인한 여백 방지 */
+    .event-video-section + p,
+    .event-video-section + br,
+    .event-container + p,
+    .event-container + br {
+        display: none;
+    }
+
     /* 레이어 */
     .layer{
         position:absolute;
@@ -195,7 +203,7 @@
 
 <!-- 상품1 -->
 <div class="event-container">
-    <div class="swiper-container pro1" style="margin:0 auto; text-align:center; overflow:hidden !important;">
+    <div class="swiper-container swiper pro1" style="margin:0 auto; text-align:center; overflow:hidden !important;">
         <ul class="swiper-wrapper" style="transition-timing-function: linear;">
             <li class="swiper-slide"><a href="/product/detail.html?product_no=21304"><img src="http://img.bstyle.kr/event/260713_joy_03_01.jpg"></a></li>
             <li class="swiper-slide"><a href="/product/detail.html?product_no=21628"><img src="http://img.bstyle.kr/event/260713_joy_03_02.jpg"></a></li>
